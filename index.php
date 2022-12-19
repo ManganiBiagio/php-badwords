@@ -12,15 +12,16 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-5">
-                <form action="">
+                <form action="form.php" method="POST">
                   <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Parola da censurare</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="...">
+                    <input type="text" class="form-control" name="wordToEliminate" id="exampleFormControlInput1" placeholder="...">
                  </div>
                   <div class="mb-3">
                      <label for="exampleFormControlTextarea1" class="form-label">Testo da censurare</label>
-                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                     <textarea class="form-control" name="textToCensure" id="exampleFormControlTextarea1" rows="3"></textarea>
                   </div>
+                  <button class="btn btn-primary" >Risultato</button>
                 </form>
             </div>
         </div>
