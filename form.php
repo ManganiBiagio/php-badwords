@@ -10,7 +10,7 @@ for($i=0;$i<count($explodeTextList);++$i){
     }
 
 }
-$filteredTest=implode($explodeTextList);
+$filteredTest=implode(" ",$explodeTextList);
 
 
 ?>
