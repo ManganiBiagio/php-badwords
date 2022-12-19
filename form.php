@@ -2,15 +2,27 @@
 $wordToEliminate = $_POST["wordToEliminate"];
 $textToCensure = $_POST["textToCensure"];
 
-$explodeTextList = explode(" ",$textToCensure);
 
-for($i=0;$i<count($explodeTextList);++$i){
-    if($explodeTextList[$i]==$wordToEliminate){
-        $explodeTextList[$i] = "***";
+
+function filterText ($txt,$word){
+    $explodeTextList = explode(" ",$txt);
+    for($i=0;$i<count($explodeTextList);++$i){
+        if($explodeTextList[$i]==$word){
+            $explodeTextList[$i] = "***";
+        }
+    
     }
+    $filteredTest=implode(" ",$explodeTextList);
+    return $filteredTest;
+    
+    
+
 
 }
-$filteredTest=implode(" ",$explodeTextList);
+
+$filteredTest=filterText($textToCensure,$wordToEliminate)
+
+
 
 
 ?>
