@@ -27,7 +27,7 @@ $filteredTest=implode($explodeTextList);
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php echo $textToCensure, $wordToEliminate ?>
+    
     <div class="container">
         <div class="row align-items-center flex-column">
             <div class="col-6">
