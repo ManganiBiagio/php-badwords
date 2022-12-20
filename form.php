@@ -6,7 +6,7 @@ $textToCensure = $_POST["textToCensure"];
 
 function filterText ($txt,$word){
     $explodeTextList = explode(" ",$txt);
-    for($i=0;$i<count($explodeTextList);++$i){
+    for($i=0;$i<count($explodeTextList);$i++){
         if($explodeTextList[$i]==$word){
             $explodeTextList[$i] = "***";
         }
